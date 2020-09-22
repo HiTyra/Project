@@ -1,0 +1,74 @@
+h1 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30pt;
+  color: rgb(238, 114, 135);
+  text-decoration: underline;
+  text-decoration-color: rgb(238, 114, 135);
+}
+h2 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 24pt;
+  color: rgb(253, 191, 203);
+  font-style: italic;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12pt;
+  border: rgb(238, 114, 135) solid 8px;
+  padding: 10px 10px 10px 10px;
+  width: 700px;
+  text-indent: 25pt;
+  line-height: 1.5em;
+  color: rgb(168, 69, 82);
+}
+#background {
+  background-color: rgb(253, 191, 203);
+}
+body {
+  background-color: rgb(255, 232, 237);
+  border: 1px solid transparent;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+.emphasize {
+  font-weight: bolder;
+  color: rgb(238, 114, 135);
+  text-transform: capitalize;
+  font-size: 18pt;
+}
+
+hr {
+  height: 3pt;
+  background-color: rgb(238, 114, 135);
+  border: none;
+}
+h3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: -280pt;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(253, 191, 203);
+  color: rgb(255, 232, 237);
+  top: -300pt;
+}
+a:link {
+  color: rgb(238, 114, 135);
+}
+a:hover {
+  color: rgb(255, 232, 237);
+}
+a:active {
+  color: rgb(255, 232, 237);
+}
+a:visited {
+  color: rgb(204, 67, 74);
+}
