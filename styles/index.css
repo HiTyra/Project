@@ -1,0 +1,69 @@
+h1 {
+    font-family: sans-serif;
+    color: rgb(12, 77, 107);
+    text-align: center;
+    text-shadow: 2px 2px #99b4ce;
+  }
+  h1:after {
+    content: " \2661";
+  }
+  /* A CSS property I added was text shadows because i thought it would make the header of the page stand out*/
+  h2 {
+    font-family: "Annie use your telescope";
+    font-size: 30px;
+    text-align: left;
+  }
+  h3 {
+    font-family: cursive;
+    color: rgb(12, 77, 107);
+    text-align: center;
+  }
+  h3:before {
+    content: " \2740";
+  }
+  h3:after {
+    content: " \2740";
+  }
+  h4 {
+    font-family: sans-serif;
+    color: rgb(93, 149, 175);
+    font-size: 12pt;
+  }
+  p {
+    font-family: sans-serif;
+    text-indent: 30px;
+    font-size: 1.2em;
+  }
+  img {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 170px;
+  }
+  body {
+    background-color: rgb(215, 238, 238);
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  a:link {
+    text-decoration: none;
+    text-align: center;
+    color: cadetblue;
+  }
+  a:visited {
+    color: palevioletred;
+  }
+  .centered {
+    text-align: center;
+  }
+  .center {
+    display: block;
+    margin: 0 auto;
+    background-color: #777;
+  }
+  
