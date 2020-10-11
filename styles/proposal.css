@@ -5,6 +5,7 @@ h1 {
   color: rgb(238, 114, 135);
   text-decoration: none;
   text-decoration-color: rgb(238, 114, 135);
+  position: static;
 }
 h2 {
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -103,4 +104,10 @@ table {
   border: teal;
   border-radius: 4px;
   background-color: rgb(250, 185, 188);
+}
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: auto;
+  width: 960px;
 }
