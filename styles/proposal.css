@@ -27,8 +27,9 @@ p {
   background-color: rgb(253, 191, 203);
 }
 body {
-  background-color:rgb(185, 214, 214);
+  background-color: rgb(185, 214, 214);
   border: 1px solid transparent;
+  padding-bottom: 58px;
 }
 .center {
   display: block;
@@ -59,10 +60,13 @@ footer {
   padding: 2px;
   background-color: teal;
   color: rgb(255, 232, 237);
-  position: fixed;
+  position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
+  border-top: 40px;
+  border-color: wheat;
+  border-radius: 2px;
 }
 a:link {
   color: rgb(255, 232, 237);
@@ -83,10 +87,9 @@ li {
   text-align: center;
   padding: 3%;
   font-size: 20px;
-
 }
 .nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -97,7 +100,6 @@ ul {
   padding: 0;
   background-color: teal;
   text-align: center;
-  
 }
 
 table {
