@@ -2,16 +2,16 @@ h1 {
   text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 30pt;
-  color: rgb(238, 114, 135);
+  color: teal;
   text-decoration: none;
-  text-decoration-color: rgb(238, 114, 135);
   position: static;
 }
 h2 {
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 24pt;
-  color: rgb(253, 191, 203);
+  font-size: 20pt;
+  color: teal;
   font-style: italic;
+  text-align: center;
 }
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -30,6 +30,7 @@ body {
   background-color: rgb(185, 214, 214);
   border: 1px solid transparent;
   padding-bottom: 58px;
+  background-image: url("home1.jpg");
 }
 .center {
   display: block;
@@ -55,7 +56,7 @@ h3 {
   margin-right: auto;
   top: -280pt;
 }
-footer {
+.footer {
   text-align: center;
   padding: 2px;
   background-color: teal;
@@ -64,19 +65,17 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
-  border-top: 40px;
-  border-color: wheat;
-  border-radius: 2px;
+  
 }
 a:link {
   color: rgb(255, 232, 237);
   text-decoration: none;
 }
 a:hover {
-  color: rgb(255, 232, 237);
+  color: blueviolet;
 }
 a:active {
-  color: rgb(255, 232, 237);
+  color: red(255, 232, 237);
 }
 a:visited {
   color: rgb(250, 185, 188);
@@ -94,6 +93,19 @@ li {
   left: 0;
   width: 100%;
 }
+.sitemap {
+  display: block;
+  text-align: center;
+  background-color: cadetblue;
+  width: 200px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.topnav {
+  color: blanchedalmond;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -101,15 +113,166 @@ ul {
   background-color: teal;
   text-align: center;
 }
-
-table {
-  border: teal;
-  border-radius: 4px;
-  background-color: rgb(250, 185, 188);
-}
 html {
   scroll-behavior: smooth;
   height: 100%;
   margin: auto;
   width: 960px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  background-color:rgb(150, 201, 201);
+}
+td {
+  border: 8px solid teal;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  vertical-align: top;
+}
+tr {
+  border: 8px solid teal;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  vertical-align: top;
+}
+.bold {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+
+form {
+  background-color: rgb(118, 190, 190);
+  width: 500px;
+  padding: 10px 20px 20px 20px;
+  border-radius: 10px;
+  border: 8px teal solid;
+  font-size: 20px;
+  margin-left: 0;
+  margin-right: auto;
+  position: absolute;
+}
+button {
+  background-color: rgb(204, 226, 226);
+}
+
+#boxwidth {
+  width: 190px;
+}
+
+.moreheight {
+  line-height: 2em;
+}
+
+#center {
+  display: inline-block;
+  margin-left: 30%;
+}
+
+
+* {box-sizing:border-box}
+/* EVERYTHING BELOW IS FROM 
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
