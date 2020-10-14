@@ -61,7 +61,7 @@ h3 {
   padding: 2px;
   background-color: teal;
   color: rgb(255, 232, 237);
-  position: absolute;
+  position: relative;
   margin-bottom: 0;
   margin-left: 0;
   width: 100%;
@@ -104,7 +104,7 @@ li {
 
 }
 .topnav {
-  color: blanchedalmond;
+  color: rgb(0, 0, 0);
 }
 ul {
   list-style-type: none;
