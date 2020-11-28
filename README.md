@@ -1,2 +1,2 @@
 # Project
- mis3690 Webtech term project - Hi Dina
+ mis3690 Webtech term project
