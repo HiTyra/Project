@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta
-    name="description"
-    content="A travelers guide to Bali Indonesia - Tips, tricks, and places to go!"
-  />
-  <meta
-    name="keywords"
-    content="travel, bali, Indonesia, tourism, travel guide"
-  />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" type="text/css" href="styles/proposal.css" />
+      name="description"
+      content="A travelers guide to Bali Indonesia - Tips, tricks, and places to go!"
+    />
+    <meta
+      name="keywords"
+      content="travel, bali, Indonesia, tourism, travel guide"
+    />
+
+    <link rel="stylesheet" type="text/css" href="styles/proposal.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
   </head>
   <body>
@@ -38,76 +39,80 @@
         feel free to reach out.
       </h2>
       <div id="center">
-      <form id="form">
-        <div class="moreheight">
-          <label for="first-name">First Name:</label>
-          <input
-            type="text"
-            name="first-name"
-            id="first-name"
-            maxlength="100"
-            placeholder="First name"
-          />
-          <br />
-          <label for="last-name">Last Name:</label>
-          <input
-            type="text"
-            name="last-name"
-            id="last-name"
-            maxlength="100"
-            placeholder="Last name"
-          />
-          <br />
-          <label for="email"> Email:</label>
-          <input
-            type="text"
-            name="email"
-            id="email"
-            maxlength="100"
-            placeholder="Email Address"
-          />
-        </div>
-        <div class="moreheight">Are you interested in traveling to Bali?</div>
-        <div>
-          <input type="checkbox" id="no" name="choices" value="no" />
-          <label for="no">No.</label>
-        </div>
-        <div>
-          <input type="checkbox" id="maybe" name="choices" value="maybe" />
-          <label for="maybe">Maybe.</label>
-        </div>
-        <div>
-          <input type="checkbox" id="yes" name="choices" value="yes" />
-          <label for="yes">I'm booking a ticket RIGHT NOW</label>
-        </div>
-        <div class="moreheight">
-          <div>
-            <label for="questions">Questions:</label>
-          </div>
-          <textarea
-            id="questions"
-            name="question"
-            rows="5"
-            cols="25"
-            placeholder="Enter your questions here..."
-          >
-          </textarea>
-        </div>
-        <div>
-          <button type="submit" name="submit-button">
-            <img
-              src="images/blacksendicon.png"
-              height="30"
-              alt="submit-button"
+        <form id="form">
+          <div class="moreheight">
+            <label for="first-name">First Name:</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              maxlength="100"
+              placeholder="First name"
             />
-          </button>
-          <button type="reset" name="reset-button">
-            <img src="images/blackrefresh.png" height="30" alt="reset-button" />
-          </button>
-        </div>
-        <h2 id="log"></h2>
-      </form>
-    </div>
+            <br />
+            <label for="last-name">Last Name:</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              maxlength="100"
+              placeholder="Last name"
+            />
+            <br />
+            <label for="email"> Email:</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              maxlength="100"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="moreheight">Are you interested in traveling to Bali?</div>
+          <div>
+            <input type="checkbox" id="no" name="choices" value="no" />
+            <label for="no">No.</label>
+          </div>
+          <div>
+            <input type="checkbox" id="maybe" name="choices" value="maybe" />
+            <label for="maybe">Maybe.</label>
+          </div>
+          <div>
+            <input type="checkbox" id="yes" name="choices" value="yes" />
+            <label for="yes">I'm booking a ticket RIGHT NOW</label>
+          </div>
+          <div class="moreheight">
+            <div>
+              <label for="questions">Questions:</label>
+            </div>
+            <textarea
+              id="questions"
+              name="question"
+              rows="5"
+              cols="25"
+              placeholder="Enter your questions here..."
+            >
+            </textarea>
+          </div>
+          <div>
+            <button type="submit" name="submit-button">
+              <img
+                src="images/blacksendicon.png"
+                height="30"
+                alt="submit-button"
+              />
+            </button>
+            <button type="reset" name="reset-button">
+              <img
+                src="images/blackrefresh.png"
+                height="30"
+                alt="reset-button"
+              />
+            </button>
+          </div>
+          <h2 id="log"></h2>
+        </form>
+      </div>
       <br />
       <br />
       <br />
@@ -159,9 +164,9 @@
       const form = document.getElementById("form");
       const log = document.getElementById("log");
       form.addEventListener("submit", logSubmit);
-     
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-54516992-1"
+
+      async;
+      src = "https://www.googletagmanager.com/gtag/js?id=UA-54516992-1";
 
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -170,7 +175,6 @@
       gtag("js", new Date());
 
       gtag("config", "UA-54516992-1");
-
     </script>
   </body>
 </html>

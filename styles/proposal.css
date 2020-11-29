@@ -99,12 +99,33 @@ li {
   background-color: cadetblue;
   width: 200px;
   font-size: 20px;
-  margin-left: auto;
+  margin-left: 100px;
   margin-right: auto;
+  padding: 1px;
 
 }
 .topnav {
   color: rgb(0, 0, 0);
+}
+.left {
+  display: block;
+  text-align: center;
+  background-color: none;
+  width: 200px;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-top: 125px;
+}
+.right {
+  display: relative;
+  text-align: right;
+  background-color: none;
+  width: 300px;
+  font-size: 12px;
+  margin-right: 400px;
+  margin-left: auto;
+  margin-top: -475px
 }
 ul {
   list-style-type: none;
@@ -150,6 +171,9 @@ tr {
   line-height: 2em;
 }
 
+iframe {
+  border:8px solid teal
+}
 
 form {
   background-color: rgb(118, 190, 190);
@@ -213,10 +237,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
   background-color: none;
   border-radius: 0%;
   display: none;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
 }
 
 .fade {

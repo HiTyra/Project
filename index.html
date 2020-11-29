@@ -44,6 +44,7 @@
                 width="300"
                 alt="Tyra-in-Bali"
                 title="Tyra in Bali"
+                id="bali"
               />
             </th>
             <td>
@@ -70,9 +71,26 @@
       <br />
       <div class="footer">
         <footer>
-          <h3>Thanks :)</h3>
+          <h3>Enjoy :)</h3>
         </footer>
       </div>
     </nav>
+    <script>
+      function enlarge() {
+        let x = document.querySelector("img");
+        x.style.width = "150%";
+      }
+      document.querySelector("img").onmouseover = function () {
+        enlarge();
+      };
+      console.log(enlarge);
+      function reduce() {
+        let x = document.querySelector("img");
+        x.style.width = "100%";
+      }
+      document.querySelector("img").onmouseout = function () {
+        reduce();
+      };
+    </script>
   </body>
 </html>
