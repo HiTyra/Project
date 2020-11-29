@@ -37,8 +37,15 @@
       <h2>
         If you have any questions, <br />
         feel free to reach out.
-      </h2>
-      <div id="center">
+      </h2> 
+      <h6>Did you book your flight yet?</h6>
+      <img src="images/bali-map.png"  
+      alt="Bali Map"
+      title="Bali Map"
+      class="map"/>
+     
+       <div>
+        
         <form id="form">
           <div class="moreheight">
             <label for="first-name">First Name:</label>
@@ -110,35 +117,10 @@
               />
             </button>
           </div>
-          <h2 id="log"></h2>
+          <h2 id="log"></h2>  
+        </div>
         </form>
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    
       <br />
       <br />
       <br />
@@ -164,7 +146,7 @@
       const form = document.getElementById("form");
       const log = document.getElementById("log");
       form.addEventListener("submit", logSubmit);
-
+/*
       async;
       src = "https://www.googletagmanager.com/gtag/js?id=UA-54516992-1";
 
@@ -175,6 +157,25 @@
       gtag("js", new Date());
 
       gtag("config", "UA-54516992-1");
+
+*/
+  
+      function enlarge() {
+        let x = document.querySelector("img");
+        x.style.width ="400px";
+      }
+      document.querySelector("img").onmouseover = function () {
+        enlarge();
+      };
+      console.log (enlarge);
+      function reduce() {
+        let x = document.querySelector("img");
+        x.style.width = "300px";
+      }
+      document.querySelector("img").onmouseout = function() {
+        reduce();
+      };
+    
     </script>
   </body>
 </html>

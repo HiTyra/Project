@@ -34,35 +34,47 @@
       </ul>
       <br />
       <h1>Food!</h1>
-      <table>
-        <tr>
-          <th rowspan="4">
-            <img
-              src="images/food1.jpg"
-              width="300"
-              alt="acai-bowl"
-              title="Acai-in-Ubud"
-            />
-          </th>
-          <td>
-            <span class="bold">Description</span
-            ><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you find yourself in the
+
+      <div class="sitemp">
+   
+        <h2 class="left">Popular Dishes</h2>
+        <div class="sitemap">
+          <h4><a href="index.html" class="heading">Home</a></h4>
+          <h4><a href="activities.html" class="heading">Activities</a></h4>
+          <h4><a href="food.html" class="heading">Food</a></h4>
+          <h4><a href="leisure.html" class="heading">Leisure</a></h4>
+          <h4><a href="nature.html" class="heading">Nature</a></h4>
+          <h4><a href="contact.html" class="heading">Contact</a></h4>
+   
+      </div>
+      <img id="click" src="images/spoon.jpg" alt="spoon" class="right"/>
+      <img id="img1" src="JB" alt="" width="500" />
+      <img id="img2" src="TF" alt="" width="500" />
+      <img id="img3" src="JT" alt="" width="500" />
+           
+      <table>  
+        <tr>  
+        <td>
+          <img
+          src="images/food1.jpg"
+          width="500"
+          alt="acai-bowl"
+          title="Acai-in-Ubud"
+        /></td>  
+        <td>Michigan</td>  
+        </tr>  
+        <tr>  
+        <td>Nevada</td>  
+        <td>Ohio</td>  
+        </tr>  
+        </table>  
+  
+
+If you find yourself in the
             center of Bali, you HAVE to get an acai or pitaya bowl. They have
             the freshest fruits. YUM! Another key food is Mie Goreng, which is a
             tradition Indonesian food you can find pretty much anywhere
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span class="bold">Duration</span> 5-10 min walk from city center
-          </td>
-        </tr>
-        <tr>
-          <td><span class="bold">Total Cost</span> ~ $5USD</td>
-        </tr>
-        <tr>
-          <td>
-            <span class="bold">Tyra's Tip!</span> <br />
+        p!</span> <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The shops in Ubud are the best for
             all sorts of fruit bowls! Definitely try all the fruits they have to
             offer.
@@ -70,6 +82,26 @@
         </tr>
       </table>
       <br />
+      <script>
+        document.getElementById("click").onclick = function () {
+          ask();
+        };
+        function ask() {
+          let userInput = prompt("What is a dish you would want to try?");
+          let msg = document.getElementById("message");
+          let img1 = document.getElementById("img1");
+          if (userInput === "brown") {
+            document.getElementById("img1").src = "images/beach1.jpg";
+          } else if (userInput === "fall") {
+            document.getElementById("img2").src = "images/beach2.jpg";
+          } else if (userInput === "tatum") {
+            document.getElementById("img3").src = "images/beach3.jpg";
+          } else {
+            alert("wrong input");
+          }
+        }
+        document.querySelector("img").onclick = showImage;
+      </script>
       <div class="footer">
         <footer>
           <h3>Thanks :)</h3>

@@ -56,6 +56,12 @@ h3 {
   margin-right: auto;
   top: -280pt;
 }
+h6 {
+  display: none;
+  margin-left: 200px;
+  margin-right: auto;
+  margin-top: 10px;
+}
 .footer {
   text-align: center;
   padding: 2px;
@@ -64,8 +70,8 @@ h3 {
   position: absolute;
   margin-bottom: 0;
   margin-left: 0;
+  margin-top: 80px;
   width: 100%;
-  
 }
 a:link {
   color: rgb(255, 232, 237);
@@ -102,7 +108,13 @@ li {
   margin-left: 100px;
   margin-right: auto;
   padding: 1px;
-
+}
+.map {
+  width: 300px;
+  display: block;
+  margin-right: 200px;
+  margin-left: auto;
+  margin-top: 200px;
 }
 .topnav {
   color: rgb(0, 0, 0);
@@ -125,7 +137,7 @@ li {
   font-size: 12px;
   margin-right: 400px;
   margin-left: auto;
-  margin-top: -475px
+  margin-top: -475px;
 }
 ul {
   list-style-type: none;
@@ -144,10 +156,10 @@ html {
 table {
   margin-left: auto;
   margin-right: auto;
-  width: 700px;
+  width: 1000px;
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  background-color:rgb(150, 201, 201);
+  background-color: rgb(150, 201, 201);
 }
 td {
   border: 8px solid teal;
@@ -172,7 +184,7 @@ tr {
 }
 
 iframe {
-  border:8px solid teal
+  border: 8px solid teal;
 }
 
 form {
@@ -182,16 +194,13 @@ form {
   border-radius: 10px;
   border: 8px teal solid;
   font-size: 20px;
-  margin-left: 0;
+  margin-left: 100px;
   margin-right: auto;
-  position: absolute;
+  margin-top: -350px;
+  position: block;
 }
 button {
   background-color: rgb(204, 226, 226);
-}
-
-#boxwidth {
-  width: 190px;
 }
 
 .moreheight {
@@ -203,8 +212,9 @@ button {
   margin-left: 30%;
 }
 
-
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box;
+}
 /* EVERYTHING BELOW IS FROM 
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
 */
@@ -247,11 +257,19 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .8}
-  to {opacity: 1}
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .8}
-  to {opacity: 1}
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }

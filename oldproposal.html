@@ -7,6 +7,59 @@
     <link rel="stylesheet" type="text/css" href="styles/proposal.css" />
   </head>
   <body>
+<div>
+
+
+  <img id="click" src="click" alt="Click here to choose the image" title="" />
+    <div>
+      Enter the last name of your favorite Celtics player
+      <ul>
+        <li>Jaylen Brown</li>
+        <li>Tacko Fall</li>
+        <li>Jayson Tatum</li>
+        <li>Kemba Walker</li>
+      </ul>
+    </div>
+    <img id="img1" src="JB" alt="" width="200" />
+    <img id="img2" src="TF" alt="" width="200" />
+    <img id="img3" src="JT" alt="" width="200" />
+    <img id="img4" src="KW" alt="" width="200" />
+
+    <script>
+      document.getElementById("click").onclick = function () {
+        ask();
+      };
+      function ask() {
+        let userInput = prompt("Who is your favorite player?");
+        let msg = document.getElementById("message");
+        let img1 = document.getElementById("img1");
+        if (userInput === "brown") {
+          document.getElementById("img1").src = "images/jaylen-brown.png";
+        } else if (userInput === "fall") {
+          document.getElementById("img2").src = "images/tacko-fall.png";
+        } else if (userInput === "tatum") {
+          document.getElementById("img3").src = "images/jayson-tatum.png";
+        } else if (userInput === "walker") {
+          document.getElementById("img4").src = "images/kemba-walker.png";
+        } else {
+          alert("wrong input");
+        }
+      }
+      document.querySelector("img").onclick = showImage;
+    </script>
+    <!--
+  <img  
+  src="images/bali-map.png"
+  alt="Tyra-in-Bali"
+  title="Tyra in Bali"
+  id="bali"
+/>
+
+</div>
+
+
+
+
     <h1>Tyra Wang Project Proposal</h1>
     <!--I understand the nav bar is not aligned with the rest however I don't think ill end up keeping this page-->
     <nav>
@@ -64,5 +117,22 @@
         <h3>Thanks :)</h3>
       </footer>
     </nav>
+    <script>
+      function enlarge() {
+        let x = document.querySelector("img");
+        x.style.width ="100%";
+      }
+      document.querySelector("img").onmouseover = function () {
+        enlarge();
+      };
+      console.log (enlarge);
+      function reduce() {
+        let x = document.querySelector("img");
+        x.style.width = "80%";
+      }
+      document.querySelector("img").onmouseout = function() {
+        reduce();
+      };
+    </script>
   </body>
 </html>
