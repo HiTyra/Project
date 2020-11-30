@@ -133,8 +133,8 @@
 
       <!--I just dont understand why it appears like this since I did the same thing for all the pages-->
       <div class="footer">
-        <footer>
-          <h3>enjoy :)</h3>
+        <footer id="footing">
+          <h5> Click for my email!</h5>
         </footer>
       </div>
     </nav>
@@ -176,6 +176,12 @@
         reduce();
       };
     
+      function changeText() {
+        const h = document.getElementById("footing");
+        h.innerHTML = "<em>Twang2@babson.edu</em?";
+      }
+      document.querySelector("h5").onclick = changeText;
+
     </script>
   </body>
 </html>

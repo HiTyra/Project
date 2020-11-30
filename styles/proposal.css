@@ -56,11 +56,19 @@ h3 {
   margin-right: auto;
   top: -280pt;
 }
+h5 {
+  
+  font-family: inherit;
+  font-size: 12pt;
+  border: none;
+  color:  rgb(250, 185, 188);
+}
 h6 {
   display: none;
   margin-left: 200px;
   margin-right: auto;
   margin-top: 10px;
+  text-align: center;
 }
 .footer {
   text-align: center;

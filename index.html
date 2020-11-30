@@ -70,10 +70,23 @@
       </div>
       <br />
       <div class="footer">
-        <footer>
-          <h3>Enjoy :)</h3>
+        <footer id="footing">
+          <h5>Click for my email!</h5>
         </footer>
       </div>
-    </nav>
+     </nav>   
+     <script>
+      function changeText() {
+
+        const h = document.getElementById("footing");
+        //const h = document.querySelector("#heading");
+
+        // change the text of heading by changing innerHTML
+        h.innerHTML = "<em>Twang2@babson.edu</em?";
+        // h.innerText = "<em>Jason</em? Tatum"
+      }
+      document.querySelector("h5").onclick = changeText;
+      </script>
+  
   </body>
 </html>

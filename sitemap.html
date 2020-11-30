@@ -65,10 +65,17 @@
       </h2>
       <br />
       <div class="footer">
-        <footer>
-          <h3>Enjoy :)</h3>
+        <footer id="footing">
+          <h5>Hope you enjoyed!</h5>
         </footer>
       </div>
     </nav>
+    <script>
+           function changeText() {
+        const h = document.getElementById("footing");
+        h.innerHTML = "<em>Thanks so much for reading!</em?";
+      }
+      document.querySelector("h5").onclick = changeText;
+    </script>
   </body>
 </html>
