@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Food</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta
+      name="description"
+      content="A travelers guide to Bali Indonesia - Tips, tricks, and places to go! Made by Babson College student Tyra Wang"
+    />
+    <meta
+      name="keywords"
+      content="food, eat, foodie, travel, bali, Indonesia, tourism, travel guide, Tyra, what to do, adventure, fun, contact page, contact"
+    />
+    <meta
+      name="author" content="Tyra Wang" />
     <link rel="stylesheet" type="text/css" href="styles/proposal.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -24,89 +38,111 @@
     <nav class="nav">
       <ul>
         <li><a href="index.html" class="heading">Home</a></li>
-        <li><a href="activities.html" class="heading">Activities</a></li>
+        <li><a href="activities.html" class="heading">Adventures</a></li>
         <li><a href="food.html" class="heading">Food</a></li>
         <li><a href="leisure.html" class="heading">Leisure</a></li>
-        <li><a href="nature.html" class="heading">Nature</a></li>
+        <li><a href="nature.html" class="heading">Relax</a></li>
         <li><a href="contact.html" class="heading">Contact</a></li>
         <!-- <li><a href="proposal.html" class="heading">Proposal</a></li> -->
         <li><a href="sitemap.html" class="heading">Sitemap</a></li>
       </ul>
       <br />
-      <h1>Food!</h1>
-
+      <h1>Food of Bali</h1>
       <div class="sitemp">
    
-        <h2 class="left">Popular Dishes</h2>
+        <h2 class="left">Popular Dishes</h2> 
         <div class="sitemap">
-          <h4><a href="index.html" class="heading">Home</a></h4>
-          <h4><a href="activities.html" class="heading">Activities</a></h4>
-          <h4><a href="food.html" class="heading">Food</a></h4>
-          <h4><a href="leisure.html" class="heading">Leisure</a></h4>
-          <h4><a href="nature.html" class="heading">Nature</a></h4>
-          <h4><a href="contact.html" class="heading">Contact</a></h4>
+          <h4><a href="#acai" class="heading">Acai Bowl</a></h4>
+          <h4><a href="#goreng" class="heading">Mie Goreng</a></h4>
+          <h4><a href="#corn" class="heading">Street Corn</a></h4>
    
       </div>
-      <img id="click" src="images/spoon.jpg" alt="spoon" class="right"/>
-      <img id="img1" src="JB" alt="" width="500" />
-      <img id="img2" src="TF" alt="" width="500" />
-      <img id="img3" src="JT" alt="" width="500" />
-           
+     
+      <img id="spoon" src="images/spoon.jpg" alt="spoon" class="click"/>
+      <img id="img1" src="acai" alt="" width="400" class="center"/>
+      <img id="img2" src="mie-goreng" alt="" width="400" class="center"/>
+      <img id="img3" src="corn" alt="" width="400" class="center" />
+      <br> 
       <table>  
         <tr>  
         <td>
           <img
-          src="images/food1.jpg"
+          src="images/acai.jpg"
           width="500"
           alt="acai-bowl"
           title="Acai-in-Ubud"
+          id="acai"
         /></td>  
-        <td>Michigan</td>  
+        <td><span class="bold">Acai Bowls</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If you find yourself in the
+          center of Bali, you HAVE to get an acai or pitaya bowl. They have
+          the freshest fruits.  <br />
+           The shops in Ubud are the best for
+          all sorts of fruit bowls! Definitely try all the fruits they have to
+          offer.</td>  
         </tr>  
         <tr>  
-        <td>Nevada</td>  
-        <td>Ohio</td>  
+        <td>          
+          <img
+          src="images/goreng (1).JPG"
+          width="500"
+          alt="mie-goreng"
+          title="mie-goreng"
+          id="goreng"
+        />
+      <!--Image from https://rasamalaysia.com/mie-goreng-indonesian-fried-noodles/ -->
+      </td>  
+        <td><span class="bold">Mie Goreng</span>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Another key food is Mie Goreng, which is a
+          tradition Indonesian food you can find pretty much anywhere</td>  
         </tr>  
-        </table>  
-  
-
-If you find yourself in the
-            center of Bali, you HAVE to get an acai or pitaya bowl. They have
-            the freshest fruits. YUM! Another key food is Mie Goreng, which is a
-            tradition Indonesian food you can find pretty much anywhere
-        p!</span> <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The shops in Ubud are the best for
-            all sorts of fruit bowls! Definitely try all the fruits they have to
-            offer.
-          </td>
-        </tr>
-      </table>
-      <br />
+        <tr>  
+          <td>          
+            <img
+            src="images/corn.jpg"
+            width="500"
+            alt="street-corn"
+            title="street-corn"
+            id="corn"
+          /></td>  
+          <td><span class="bold">Street Corn</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>  
+          </tr>  
+        </table>
       <script>
-        document.getElementById("click").onclick = function () {
+        document.getElementById("spoon").onclick = function () {
           ask();
         };
         function ask() {
-          let userInput = prompt("What is a dish you would want to try?");
+          let userInput = prompt("What popular dish you would want to try?");
           let msg = document.getElementById("message");
           let img1 = document.getElementById("img1");
-          if (userInput === "brown") {
-            document.getElementById("img1").src = "images/beach1.jpg";
-          } else if (userInput === "fall") {
-            document.getElementById("img2").src = "images/beach2.jpg";
-          } else if (userInput === "tatum") {
-            document.getElementById("img3").src = "images/beach3.jpg";
+          if (userInput === "Acai Bowl") {
+            document.getElementById("img1").src = "images/acai.jpg";
+          } else if (userInput === "Mie Goreng") {
+            document.getElementById("img2").src = "images/goreng (1).JPG";
+          } else if (userInput === "Street Corn") {
+            document.getElementById("img3").src = "images/corn.jpg";
           } else {
-            alert("wrong input");
+            alert("Sorry, try another food...");
           }
         }
         document.querySelector("img").onclick = showImage;
       </script>
       <div class="footer">
-        <footer>
-          <h3>Thanks :)</h3>
+        <footer id="footing">
+          <h5>Click to see my favorite food</h5>
         </footer>
       </div>
     </nav>
+    <script>
+       function changeText() {
+        const h = document.getElementById("footing");
+        h.innerHTML = "<em>Acai Bowls!</em?";
+      }
+      document.querySelector("h5").onclick = changeText;
+    </script>
   </body>
 </html>

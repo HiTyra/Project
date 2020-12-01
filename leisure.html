@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Leisure</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta
+      name="description"
+      content="A travelers guide to Bali Indonesia - Tips, tricks, and places to go! Made by Babson College student Tyra Wang"
+    />
+    <meta
+      name="keywords"
+      content="shopping, temples, leisure, beach, spa, activities, travel, bali, Indonesia, tourism, travel guide, Tyra, what to do, adventure, fun, contact page, contact"
+    />
+    <meta
+      name="author" content="Tyra Wang" />
     <link rel="stylesheet" type="text/css" href="styles/proposal.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -25,16 +39,16 @@
     <nav class="nav">
       <ul>
         <li><a href="index.html" class="heading">Home</a></li>
-        <li><a href="activities.html" class="heading">Activities</a></li>
+        <li><a href="activities.html" class="heading">Adventures</a></li>
         <li><a href="food.html" class="heading">Food</a></li>
         <li><a href="leisure.html" class="heading">Leisure</a></li>
-        <li><a href="nature.html" class="heading">Nature</a></li>
+        <li><a href="nature.html" class="heading">Relax</a></li>
         <li><a href="contact.html" class="heading">Contact</a></li>
         <!--<li><a href="proposal.html" class="heading">Proposal</a></li>-->
         <li><a href="sitemap.html" class="heading">Sitemap</a></li>
       </ul>
       <br>
-      <h1>Leisure activities (WIP)</h1>
+      <h1>Leisures of Bali</h1>
       <table>
         <tr>
           <th rowspan="4">
@@ -61,9 +75,9 @@
               <div class="mySlides fade">
                 <!--<div class="numbertext">2 / 3</div>-->
                 <img
-                  src="images/Leisure2.jpg"
-                  alt="HotSprings"
-                  title="BaliHotSpring"
+                  src="images/walking.jpg"
+                  alt="walking"
+                  title="walking"
                   width="500"
                 />
                 <div class="text">Natural Hot Springs!</div>
@@ -146,10 +160,18 @@
       <br />
       <br />
       <div class="footer">
-        <footer>
-          <h3>Thanks :)</h3>
+        <footer id="footing">
+          <h5>Click to see my favorite leisure activity</h5>
         </footer>
       </div>
     </nav>
+    <script>
+      function changeText() {
+        const h = document.getElementById("footing");
+        h.innerHTML = "Shopping!";
+      }
+      document.querySelector("h5").onclick = changeText;
+      </script>
+  
   </body>
 </html>

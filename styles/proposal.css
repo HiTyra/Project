@@ -42,7 +42,7 @@ body {
   font-weight: bolder;
   color: rgb(238, 114, 135);
   text-transform: capitalize;
-  font-size: 18pt;
+  font-size: 22pt;
 }
 
 hr {
@@ -62,9 +62,9 @@ h5 {
   font-size: 12pt;
   border: none;
   color:  rgb(250, 185, 188);
+  text-align: center;
 }
 h6 {
-  display: none;
   margin-left: 200px;
   margin-right: auto;
   margin-top: 10px;
@@ -124,6 +124,11 @@ li {
   margin-left: auto;
   margin-top: 200px;
 }
+.click {
+  width: 300px;
+  margin-left: 700px;
+  margin-top: -400px;
+}
 .topnav {
   color: rgb(0, 0, 0);
 }
@@ -176,6 +181,7 @@ td {
   padding-top: 3px;
   padding-bottom: 3px;
   vertical-align: top;
+  font-size: 20px;
 }
 tr {
   border: 8px solid teal;
@@ -187,7 +193,7 @@ tr {
 }
 .bold {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 2em;
 }
 

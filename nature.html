@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Relax</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta
+      name="description"
+      content="A travelers guide to Bali Indonesia - Tips, tricks, and places to go! Made by Babson College student Tyra Wang"
+    />
+    <meta
+      name="keywords"
+      content="Relax, spa, beaches, shopping, activities, travel, bali, Indonesia, tourism, travel guide, Tyra, what to do, adventure, fun, contact page, contact"
+    />
+    <meta
+      name="author" content="Tyra Wang" />
     <link rel="stylesheet" type="text/css" href="styles/proposal.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -23,14 +37,14 @@
   <body>
     <br />
     <br />
-    <h1>Relax</h1>
+    <h1>Relax in Bali</h1>
     <nav class="nav">
       <ul>
         <li><a href="index.html" class="heading">Home</a></li>
-        <li><a href="activities.html" class="heading">Activities</a></li>
+        <li><a href="activities.html" class="heading">Adventures</a></li>
         <li><a href="food.html" class="heading">Food</a></li>
         <li><a href="leisure.html" class="heading">Leisure</a></li>
-        <li><a href="nature.html" class="heading">Nature</a></li>
+        <li><a href="nature.html" class="heading">Relax</a></li>
         <li><a href="contact.html" class="heading">Contact</a></li>
         <!--<li><a href="proposal.html" class="heading">Proposal</a></li>-->
         <li><a href="sitemap.html" class="heading">Sitemap</a></li>
@@ -100,53 +114,28 @@
         <table>
           <tr>
             <td>
-              <div style="text-align: center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-              </div>
-              <div class="slideshow-container">
-  
-                <div class="mySlidess">
-                 
-                 <img
-                    src="images/Beach1.jpg"
-                    width="977"
-                    alt="FamousBeach"
-                    title="BaliBeach"
-                  />
-                  <div class="text"> Beach!</div>
-                </div>
-                <div class="mySlidess">
-                 
-                  <img
-                     src="images/Beach2.jpg"
-                     width="977"
-                     alt="FamousBeach"
-                     title="BaliBeach"
-                   />
-                   <div class="text"> Beach2</div>
-                   </div>
-                   <div class="mySlidess">
-                 
-                    <img
-                       src="images/Beach3.jpg"
-                       width="977"
-                       alt="FamousBeach"
-                       title="BaliBeach"
-                     />
-                     <div class="text"> Beac3</div>
-                     </div>
-                     <div class="mySlidess">
-                 
-                      <img
-                         src="images/Beach4.jpg"
-                         width="977"
-                         alt="FamousBeach"
-                         title="BaliBeach"
-                       />
-                       <div class="text"> Beach4</div>
+              <img
+              src="images/spa.jpg"
+              alt="spa-prices"
+              title="spa-prices"
+              width="977">
+            </td>
+          </tr>
+          <tr>
+            <td>Bali is known for its beautiful beaches and they are the perfect
+              way to relax. Some are more touristy - find the hidden gems
+              each are the perfect</td>
+          </tr>
+        </table>
+        <h4 class="left">Natural Hot Springs</h4>
+        <table>
+          <tr>
+            <td>
+              <img
+              src="images/leisure2.jpg"
+              alt="hot-spring"
+              title="hot-spring"
+              width="977">
             </td>
           </tr>
           <tr>
@@ -183,10 +172,18 @@
       
       </script>
       <div class="footer">
-        <footer>
-          <h3>Thanks :)</h3>
+        <footer id="footing">
+          <h5>Click to see my favorite beach</h5>
         </footer>
       </div>
     </nav>
+    <script>
+      function changeText() {
+        const h = document.getElementById("footing");
+        h.innerHTML = "<em>Umbrella Beach</em?";
+      }
+      document.querySelector("h5").onclick = changeText;
+      </script>
+  
   </body>
 </html>

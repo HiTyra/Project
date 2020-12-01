@@ -4,30 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta
       name="description"
-      content="A travelers guide to Bali Indonesia - Tips, tricks, and places to go!"
+      content="A travelers guide to Bali Indonesia - Tips, tricks, and places to go! Made by Babson College student Tyra Wang"
     />
     <meta
       name="keywords"
-      content="travel, bali, Indonesia, tourism, travel guide"
+      content="travel, bali, Indonesia, tourism, travel guide, Tyra, what to do, adventure, fun, contact page, contact"
     />
-
+    <meta
+      name="author" content="Tyra Wang" />
     <link rel="stylesheet" type="text/css" href="styles/proposal.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-54516992-1"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+  
+        gtag("config", "UA-54516992-1");
+      </script>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav"> 
       <ul>
         <li><a href="index.html" class="heading">Home</a></li>
-        <li><a href="activities.html" class="heading">Activities</a></li>
+        <li><a href="activities.html" class="heading">Adventures</a></li>
         <li><a href="food.html" class="heading">Food</a></li>
         <li><a href="leisure.html" class="heading">Leisure</a></li>
-        <li><a href="nature.html" class="heading">Nature</a></li>
+        <li><a href="nature.html" class="heading">Relax</a></li>
         <li><a href="contact.html" class="heading">Contact</a></li>
         <!--<li><a href="proposal.html" class="heading">Proposal</a></li>-->
         <li><a href="sitemap.html" class="heading">Sitemap</a></li>
@@ -37,16 +51,13 @@
       <h2>
         If you have any questions, <br />
         feel free to reach out.
-      </h2> 
-      <h6>Did you book your flight yet?</h6>
+      </h2>
       <img src="images/bali-map.png"  
       alt="Bali Map"
       title="Bali Map"
       class="map"/>
-     
-       <div>
-        
-        <form id="form">
+
+    <form id="form">
           <div class="moreheight">
             <label for="first-name">First Name:</label>
             <input
@@ -74,7 +85,7 @@
               maxlength="100"
               placeholder="Email Address"
             />
-          </div>
+        </div>
           <div class="moreheight">Are you interested in traveling to Bali?</div>
           <div>
             <input type="checkbox" id="no" name="choices" value="no" />
@@ -102,7 +113,7 @@
             </textarea>
           </div>
           <div>
-            <button type="submit" name="submit-button">
+            <button type="submit" name="submit-button" id="submit">
               <img
                 src="images/blacksendicon.png"
                 height="30"
@@ -118,20 +129,7 @@
             </button>
           </div>
           <h2 id="log"></h2>  
-        </div>
         </form>
-    
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <!--I just dont understand why it appears like this since I did the same thing for all the pages-->
       <div class="footer">
         <footer id="footing">
           <h5> Click for my email!</h5>
@@ -139,6 +137,7 @@
       </div>
     </nav>
     <script>
+
       function logSubmit(event) {
         log.textContent = `Thanks for submitting! Have A Nice Day:)`;
         event.preventDefault();
@@ -146,19 +145,6 @@
       const form = document.getElementById("form");
       const log = document.getElementById("log");
       form.addEventListener("submit", logSubmit);
-/*
-      async;
-      src = "https://www.googletagmanager.com/gtag/js?id=UA-54516992-1";
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-54516992-1");
-
-*/
   
       function enlarge() {
         let x = document.querySelector("img");
@@ -181,7 +167,25 @@
         h.innerHTML = "<em>Twang2@babson.edu</em?";
       }
       document.querySelector("h5").onclick = changeText;
+      
+      function validate() {
+        const myForm = document.querySelector("form");
+        const userNameFirst = myForm["first-name"].value;
+        const userNameLast = myForm["last-name"].value;
+        const userEmail = myForm["email"].value;
+      }
 
+      if (userNameFirst.length === 0 || userNameLast === 0 || userEmail === 0) {
+          alert("please finish entering your name and email");
+        } else if (isNaN(userEmail)) {
+          alert("please enter your email");
+        } else {
+          let message;
+        }
+        document.querySelector("#submit").onclick = function () {
+        validate();
+      
+        }
     </script>
   </body>
 </html>

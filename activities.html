@@ -3,7 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Adventures</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta
+      name="description"
+      content="A travelers guide to Bali Indonesia - Tips, tricks, and places to go! Made by Babson College student Tyra Wang"
+    />
+    <meta
+      name="keywords"
+      content="activities, travel, bali, Indonesia, tourism, travel guide, Tyra, what to do, adventure, fun, contact page, contact"
+    />
+    <meta
+      name="author" content="Tyra Wang" />
     <link rel="stylesheet" type="text/css" href="styles/proposal.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -24,25 +38,25 @@
     <nav class="nav">
       <ul>
         <li><a href="index.html" class="heading">Home</a></li>
-        <li><a href="activities.html" class="heading">Activities</a></li>
+        <li><a href="activities.html" class="heading">Adventures</a></li>
         <li><a href="food.html" class="heading">Food</a></li>
         <li><a href="leisure.html" class="heading">Leisure</a></li>
-        <li><a href="nature.html" class="heading">Nature</a></li>
+        <li><a href="nature.html" class="heading">Relax</a></li>
         <li><a href="contact.html" class="heading">Contact</a></li>
         <!--<li><a href="proposal.html" class="heading">Proposal</a></li>-->
         <li><a href="sitemap.html" class="heading">Sitemap</a></li>
       </ul>
     <div> 
     <br>
-    <h1>Activities</h1>
+    <h1>Adventures of Bali</h1>
       <table>
         <tr>
           <th rowspan="4">
             <img
-              src="images/activity.JPG"
+              src="images/IMG_4482.jpg"
               width="600"
-              alt="Rafting"
-              title="White-Water-Rafting"
+              alt="baliSwing"
+              title="Bali Swing"
             />
           </th>
           <td>
@@ -108,10 +122,54 @@
       </tr>
     </table>
     <div class="footer">
-      <footer>
-        <h3>Thanks :)</h3>
+      <footer id="footing">
+        <h5>Click to see my favorite adventure</h5>
       </footer>
     </div>
+    <br>
+    <table>
+      <tr>
+        <th rowspan="4">
+          <img
+            src="images/IMG_4482.jpg"
+            width="600"
+            alt="baliSwing"
+            title="Bali Swing"
+          />
+        </th>
+        <td>
+          <span class="bold">Bali Swing</span><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of my favorite activities that I
+          did in Bali was white water rafting! Not only do you raft through
+          Bali's beautiful scenery, it is fun and competitive! You get to
+          compete against the other teams to get to the finish!
+        </td>
+      </tr>
+      <tr>
+        <td><span class="bold">Duration</span> All day</td>
+      </tr>
+      <tr>
+        <td>
+          <span class="bold">Total Cost</span> About $50 USD plus
+          transportation
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="bold">Tyra's Tip!</span> <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wear clothes that you are comfortable
+          in, because you will get wet!
+        </td>
+      </tr>
+    </table>
+  </div>
   </nav>
+  <script>
+        function changeText() {
+        const h = document.getElementById("footing");
+        h.innerHTML = "<em>White Water Rafting!</em?";
+      }
+      document.querySelector("h5").onclick = changeText;
+  </script>
 </body>
 </html>
