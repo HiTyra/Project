@@ -185,16 +185,14 @@
         const userEmail = myForm["email"].value;
       }
 
-      if (userNameFirst.length === 0 || userNameLast === 0 || userEmail === 0) {
+      if (userNameFirst.length === 0 || userNameLast.length === 0 || userEmail.length === 0) {
         alert("please finish entering your name and email");
       } else if (isNaN(userEmail)) {
         alert("please enter your email");
       } else {
         let message;
       }
-      document.querySelector("#submit").onclick = function () {
-        validate();
-      };
+      document.getElementById("submit").onclick = validate;
     </script>
   </body>
 </html>
