@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
     <link rel="manifest" href="/site.webmanifest" />
     <meta
       name="description"
@@ -16,26 +30,25 @@
       name="keywords"
       content="travel, bali, Indonesia, tourism, travel guide, Tyra, what to do, adventure, fun, contact page, contact"
     />
-    <meta
-      name="author" content="Tyra Wang" />
+    <meta name="author" content="Tyra Wang" />
     <link rel="stylesheet" type="text/css" href="styles/proposal.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=UA-54516992-1"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments);
-        }
-        gtag("js", new Date());
-  
-        gtag("config", "UA-54516992-1");
-      </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-54516992-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-54516992-1");
+    </script>
   </head>
   <body>
-    <nav class="nav"> 
+    <nav class="nav">
       <ul>
         <li><a href="index.html" class="heading">Home</a></li>
         <li><a href="activities.html" class="heading">Adventures</a></li>
@@ -43,101 +56,98 @@
         <li><a href="leisure.html" class="heading">Leisure</a></li>
         <li><a href="nature.html" class="heading">Relax</a></li>
         <li><a href="contact.html" class="heading">Contact</a></li>
-        <!--<li><a href="proposal.html" class="heading">Proposal</a></li>-->
         <li><a href="sitemap.html" class="heading">Sitemap</a></li>
       </ul>
       <br />
       <br />
+      <h1>Contact Me!</h1>
       <h2>
         If you have any questions, <br />
         feel free to reach out.
       </h2>
-      <img src="images/bali-map.png"  
-      alt="Bali Map"
-      title="Bali Map"
-      class="map"/>
+      <img
+        src="images/bali-map.png"
+        alt="Bali Map"
+        title="Bali Map"
+        class="map"
+      />
 
-    <form id="form">
-          <div class="moreheight">
-            <label for="first-name">First Name:</label>
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              maxlength="100"
-              placeholder="First name"
-            />
-            <br />
-            <label for="last-name">Last Name:</label>
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              maxlength="100"
-              placeholder="Last name"
-            />
-            <br />
-            <label for="email"> Email:</label>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              maxlength="100"
-              placeholder="Email Address"
-            />
+      <form id="form">
+        <div class="moreheight">
+          <label for="first-name">First Name:</label>
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            maxlength="100"
+            placeholder="First name"
+          />
+          <br />
+          <label for="last-name">Last Name:</label>
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            maxlength="100"
+            placeholder="Last name"
+          />
+          <br />
+          <label for="email"> Email:</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            maxlength="100"
+            placeholder="Email Address"
+          />
         </div>
-          <div class="moreheight">Are you interested in traveling to Bali?</div>
+        <div class="moreheight">Are you interested in traveling to Bali?</div>
+        <div>
+          <input type="checkbox" id="no" name="choices" value="no" />
+          <label for="no">No.</label>
+        </div>
+        <div>
+          <input type="checkbox" id="maybe" name="choices" value="maybe" />
+          <label for="maybe">Maybe.</label>
+        </div>
+        <div>
+          <input type="checkbox" id="yes" name="choices" value="yes" />
+          <label for="yes">I'm booking a ticket RIGHT NOW</label>
+        </div>
+        <div class="moreheight">
           <div>
-            <input type="checkbox" id="no" name="choices" value="no" />
-            <label for="no">No.</label>
+            <label for="questions">Questions:</label>
           </div>
-          <div>
-            <input type="checkbox" id="maybe" name="choices" value="maybe" />
-            <label for="maybe">Maybe.</label>
-          </div>
-          <div>
-            <input type="checkbox" id="yes" name="choices" value="yes" />
-            <label for="yes">I'm booking a ticket RIGHT NOW</label>
-          </div>
-          <div class="moreheight">
-            <div>
-              <label for="questions">Questions:</label>
-            </div>
-            <textarea
-              id="questions"
-              name="question"
-              rows="5"
-              cols="25"
-              placeholder="Enter your questions here..."
-            >
-            </textarea>
-          </div>
-          <div>
-            <button type="submit" name="submit-button" id="submit">
-              <img
-                src="images/blacksendicon.png"
-                height="30"
-                alt="submit-button"
-              />
-            </button>
-            <button type="reset" name="reset-button">
-              <img
-                src="images/blackrefresh.png"
-                height="30"
-                alt="reset-button"
-              />
-            </button>
-          </div>
-          <h2 id="log"></h2>  
-        </form>
+          <textarea
+            id="questions"
+            name="question"
+            rows="5"
+            cols="25"
+            placeholder="Enter your questions here..."
+          >
+          </textarea>
+        </div>
+        <div>
+          <button type="submit" name="submit-button" id="submit">
+            <img
+              src="images/blacksendicon.png"
+              height="30"
+              alt="submit-button"
+            />
+          </button>
+          <button type="reset" name="reset-button">
+            <img src="images/blackrefresh.png" height="30" alt="reset-button" />
+          </button>
+        </div>
+        <h2 id="log"></h2>
+      </form>
       <div class="footer">
         <footer id="footing">
-          <h5> Click for my email!</h5>
+          <h5>Click for my email!</h5>
         </footer>
       </div>
     </nav>
     <script>
-
       function logSubmit(event) {
         log.textContent = `Thanks for submitting! Have A Nice Day:)`;
         event.preventDefault();
@@ -145,29 +155,29 @@
       const form = document.getElementById("form");
       const log = document.getElementById("log");
       form.addEventListener("submit", logSubmit);
-  
+
       function enlarge() {
         let x = document.querySelector("img");
-        x.style.width ="400px";
+        x.style.width = "400px";
       }
       document.querySelector("img").onmouseover = function () {
         enlarge();
       };
-      console.log (enlarge);
+      console.log(enlarge);
       function reduce() {
         let x = document.querySelector("img");
         x.style.width = "300px";
       }
-      document.querySelector("img").onmouseout = function() {
+      document.querySelector("img").onmouseout = function () {
         reduce();
       };
-    
+
       function changeText() {
         const h = document.getElementById("footing");
         h.innerHTML = "<em>Twang2@babson.edu</em?";
       }
       document.querySelector("h5").onclick = changeText;
-      
+
       function validate() {
         const myForm = document.querySelector("form");
         const userNameFirst = myForm["first-name"].value;
@@ -176,16 +186,15 @@
       }
 
       if (userNameFirst.length === 0 || userNameLast === 0 || userEmail === 0) {
-          alert("please finish entering your name and email");
-        } else if (isNaN(userEmail)) {
-          alert("please enter your email");
-        } else {
-          let message;
-        }
-        document.querySelector("#submit").onclick = function () {
+        alert("please finish entering your name and email");
+      } else if (isNaN(userEmail)) {
+        alert("please enter your email");
+      } else {
+        let message;
+      }
+      document.querySelector("#submit").onclick = function () {
         validate();
-      
-        }
+      };
     </script>
   </body>
 </html>

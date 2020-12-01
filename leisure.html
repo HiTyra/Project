@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leisure</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
     <link rel="manifest" href="/site.webmanifest" />
     <meta
       name="description"
@@ -16,8 +30,7 @@
       name="keywords"
       content="shopping, temples, leisure, beach, spa, activities, travel, bali, Indonesia, tourism, travel guide, Tyra, what to do, adventure, fun, contact page, contact"
     />
-    <meta
-      name="author" content="Tyra Wang" />
+    <meta name="author" content="Tyra Wang" />
     <link rel="stylesheet" type="text/css" href="styles/proposal.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -44,26 +57,23 @@
         <li><a href="leisure.html" class="heading">Leisure</a></li>
         <li><a href="nature.html" class="heading">Relax</a></li>
         <li><a href="contact.html" class="heading">Contact</a></li>
-        <!--<li><a href="proposal.html" class="heading">Proposal</a></li>-->
         <li><a href="sitemap.html" class="heading">Sitemap</a></li>
       </ul>
-      <br>
+      <br />
       <h1>Leisures of Bali</h1>
       <table>
         <tr>
-          <th rowspan="4">
-              <div style="text-align: center">
+          <td rowspan="4">
+            <div style="text-align: center">
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
               <span class="dot" onclick="currentSlide(3)"></span>
-            </div><!--EVERYTHING BELOW IS FROM 
-            https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
-            I am just exploring around-->
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
             <div class="slideshow-container">
-              <!-- Full-width images with number and caption text -->
-              <div class="mySlides fade">
-                <!--<div class="numbertext">1 / 3</div>-->
-               <img
+              <div class="slides">
+                <img
                   src="images/leisure1.jpg"
                   width="500"
                   alt="FamousBeach"
@@ -71,43 +81,55 @@
                 />
                 <div class="text">Umbrella Beach!</div>
               </div>
-
-              <div class="mySlides fade">
-                <!--<div class="numbertext">2 / 3</div>-->
+              <div class="slides">
                 <img
-                  src="images/walking.jpg"
+                  src="images/new1.jpg"
                   alt="walking"
                   title="walking"
                   width="500"
                 />
-                <div class="text">Natural Hot Springs!</div>
+                <div class="text">Exploring</div>
               </div>
-
-              <div class="mySlides fade">
-                <!--<div class="numbertext">3 / 3</div>-->
+              <div class="slides">
                 <img
-                  src="images/leisure3.jpg"
+                  src="images/new8.jpg"
                   width="500"
-                  alt="Rice-Patty-Farm"
-                  title="RiceFarm"
+                  alt="monkey"
+                  title="monkey"
                 />
-                <div class="text">Rice Farm!</div>
+                <div class="text">Monkey Forest</div>
               </div>
-
-              <!-- Next and previous buttons 
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <div class="slides">
+                <img
+                  src="images/new3.jpg"
+                  width="500"
+                  alt="baliTemple"
+                  title="BaliTemple"
+                />
+                <div class="text">Temples</div>
+              </div>
+              <div class="slides">
+                <img
+                  src="images/new7.jpg"
+                  width="500"
+                  alt="Mopeds"
+                  title="Mopeds"
+                />
+                <div class="text">Mopeds</div>
+              </div>
             </div>
-            <br />
--->
-            <!-- The dots/circles -->
+          </td>
 
-          </th>
           <td>
             <span class="bold">Too many to count!</span><br />
-            There are so many relaxing activities to do on the island of Bali!
-            Take a dip in the natural hot springs, go shopping at the **
-            and my personal favourite, sitting by the beach and having a nice drink!
+            There are so many leisure activities to do on the island of Bali on
+            your day off! Spend the day shopping at the mall or at the local
+            town center. If you're feeling up to it, take a moped ride wherever
+            you go Visiting temples is a must, there are many throughout the
+            island but many of the tourist spots get quite busy. Be sure to take
+            a trip to monkey forest, but beware, they might jump on your head!
+            My personal favorite is sitting by the beach and having a refreshing
+            coconut!
           </td>
         </tr>
         <tr>
@@ -119,11 +141,15 @@
         <tr>
           <td>
             <span class="bold">Total Cost</span> <br />
-            xxxxx
+            Most of these activities are free or require a small entrance fee!
           </td>
         </tr>
         <tr>
-          <td><span class="bold">Tyra's Tip!</span> <br />xxxxx</td>
+          <td>
+            <span class="bold">Tyra's Tip!</span> <br />While Bali is a small
+            island, there are so many activities. Make sure to map out your
+            plans so you take advantage of the time you have.
+          </td>
         </tr>
       </table>
 
@@ -133,7 +159,7 @@
 
         function showSlides() {
           let i;
-          let slides = document.getElementsByClassName("mySlides");
+          let slides = document.getElementsByClassName("slides");
           let dots = document.getElementsByClassName("dot");
           for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
@@ -147,18 +173,10 @@
           }
           slides[slideIndex - 1].style.display = "block";
           dots[slideIndex - 1].className += " active";
-          setTimeout(showSlides, 3000); // Change image every 2 seconds
+          setTimeout(showSlides, 3000);
         }
         document.querySelector("body").onload = slideShow;
       </script>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <div class="footer">
         <footer id="footing">
           <h5>Click to see my favorite leisure activity</h5>
@@ -171,7 +189,6 @@
         h.innerHTML = "Shopping!";
       }
       document.querySelector("h5").onclick = changeText;
-      </script>
-  
+    </script>
   </body>
 </html>

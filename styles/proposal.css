@@ -57,11 +57,10 @@ h3 {
   top: -280pt;
 }
 h5 {
-  
   font-family: inherit;
   font-size: 12pt;
   border: none;
-  color:  rgb(250, 185, 188);
+  color: rgb(250, 185, 188);
   text-align: center;
 }
 h6 {
@@ -229,22 +228,21 @@ button {
 * {
   box-sizing: border-box;
 }
-/* EVERYTHING BELOW IS FROM 
+/*  inspiration from
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
 */
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-.mySlides {
+.slides {
   display: none;
 }
 
 .text {
-  color: rgb(118, 190, 190);
+  color: white;
   font-size: 25px;
   padding: 8px 12px;
   position: absolute;
